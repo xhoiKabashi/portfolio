@@ -1,63 +1,105 @@
-@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Roboto+Flex:opsz,wght@8..144,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Roboto+Flex:opsz,wght@8..144,300&display=swap");
 /* applying color variables */
 :root {
   --font-color-white: #e6e6e6;
   --main-bg-color: #1a1a2d;
   --hero-text-color: #d24141;
+  --navbar-color: #292c35;
 }
 /* removig the default behavior as marging padding etc  */
 body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Roboto Flex", sans-serif;
+  background-color: var(--main-bg-color);
+
 }
 
 /* adding styling for mobile */
-@media (max-width: 768px){
-
-    .main-header{
-    }
-
+@media (max-width: 768px) {
+  .main-header {
+    background-color: var(--main-bg-color);
+  }
 }
 
 /* adding desktop style */
-.main-header{
-    background-color: var(--main-bg-color);
-    color: var(--font-color-white);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100vh;
-    text-align: center;
-    font-family: 'Roboto Flex', sans-serif;
+
+/* ************************/
+/* styling header */
+.main-header {
+  color: var(--font-color-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  font-family: "Roboto Flex", sans-serif;
 }
 
-.main-header .hero{
-    color: var(--hero-text-color);
-    fill: var(--hero-text-color);
+.main-header .hero {
+  color: var(--hero-text-color);
+  fill: var(--font-color-white);
 }
-.main-header button{
-    width: max-content;
-    margin: 0 auto;
-    padding: 5px 15px;
-    background-color: var(--main-bg-color);
-    border: 1px solid var(--hero-text-color);
-    border-radius: 14px;
-    
+.main-header button {
+  width: max-content;
+  margin: 0 auto;
+  padding: 5px 15px;
+  background-color: var(--main-bg-color);
+  border: 1px solid var(--hero-text-color);
+  border-radius: 14px;
+  transition: linear 0.5s;
 }
+.main-header button:hover {
+  background-color: #d24141;
+  text-align: center;
+  border: 1px solid var(--font-color-white);
+}
+
 .main-header button a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--font-color-white);
-    text-decoration: none;
-    font-family: 'Roboto Flex', sans-serif;
-    font-stretch:extra-expanded
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--font-color-white);
+  text-decoration: none;
+  font-family: "Roboto Flex", sans-serif;
+  font-stretch: extra-expanded;
 }
 
 .arrow-down {
-    width: 25px;
-    margin-left: 10px;
+  width: 25px;
+  margin-left: 10px;
+}
+/* navbar */
+
+.navbar-container{
+position: sticky;
+background-color: var(--navbar-color);
 }
 
+.nav-list {
+  display: flex;
+  padding: 15px 0;
+  margin-top: 0px;
+  list-style: none;
+  justify-content: center;
+  gap: 15px;
+}
+.nav-items a {
+  text-decoration: none;
+  color: var(--font-color-white);
+  font-size: 12px;
+}
+.nav-items a:hover{
+    color: var(--hero-text-color);
+}
+.nav-items a:focus{
+    border-bottom: 2px solid var(--hero-text-color);
+    color: var(--font-color-white);
+    padding-bottom: 5px;
+}
+/* about */
+
+.about-section{
+    background-color: var();
+}
