@@ -101,5 +101,30 @@ background-color: var(--navbar-color);
 /* about */
 
 .about-section{
-    background-color: var();
+    padding-top:30px;
+}
+.about-text {
+    text-align: center;
+    color: var(--font-color-white);
+}
+
+.about-text h1 {
+    z-index: 100;
+}
+
+.about-text hr {
+    display: block; /* Add this line to make it a block-level element */
+    margin-top: 10px; /* Adjust the margin as needed */
+    color: var(--hero-text-color);
+    
+}
+
+fieldset{
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-top: 1px solid var(--hero-text-color);
+}
+legend {
+    padding:0 20px;
 }
