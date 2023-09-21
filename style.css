@@ -6,6 +6,11 @@
   --hero-text-color: #d24141;
   --navbar-color: #292c35;
 }
+/* Add this CSS to your style.css file */
+html {
+  scroll-behavior: smooth;
+}
+
 /* removig the default behavior as marging padding etc  */
 body {
   padding: 0;
