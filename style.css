@@ -213,8 +213,15 @@ legend {
   gap: 20px;
 }
 
+.article-left{
+
+margin: 0 50px;
+}
+
 .img-projects {
-  width: 200px;
+  width: 230px;
+  border: 3px solid white;
+  border-radius: 5px;
 }
 
 #btn-live-demo {
@@ -247,7 +254,7 @@ legend {
   .profile-bio p {
     font-size: 14px;
     text-align: center;
-    width: 100%;
+    width: 90%;
   }
 
   /* acrticle mobile styling */
@@ -259,6 +266,9 @@ legend {
     text-align: center;
     padding: 0 40px;
   }
+  .article-left{
+    margin: 0;
+    }
 }
 
 /* footer styling */
