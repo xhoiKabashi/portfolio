@@ -9,9 +9,19 @@ const greetings = [
 ];
 
 const greetingsElements = document.querySelector("#greeting");
+let lastRandomIndex = -1;
+
+function getRandomIndex() {
+  let randomIndex;
+  do {
+    randomIndex = Math.floor(Math.random() * greetings.length);
+  } while (randomIndex === lastRandomIndex);
+  lastRandomIndex = randomIndex;
+  return randomIndex;
+}
 
 function changeGreeting() {
-  const randomIndex = Math.floor(Math.random() * greetings.length);
+  const randomIndex = getRandomIndex();
   greetingsElements.innerHTML = greetings[randomIndex];
 }
 
